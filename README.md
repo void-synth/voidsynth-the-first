@@ -1,18 +1,4 @@
-# Portfolio Website
 
-<p align="center">
-  <img src="/public/favicon.svg" width="50" alt="Logo" />
-</p>
-
-<h3 align="center">Personal portfolio for Mufutau Umar Olamilekan (VoidSynth)</h3>
-
-[![Site preview](/public/site-preview.png)](https://voidsynth-iota.vercel.app)
-
-A modern, interactive portfolio website showcasing projects and work. Built with [Remix](https://remix.run/), [React 18](https://react.dev/), [Three.js](https://threejs.org/), and [Framer Motion](https://www.framer.com/motion/).
-
-**Live Site:** [voidsynth-iota.vercel.app](https://voidsynth-iota.vercel.app)
-
-## ✨ Features
 
 - **3D Graphics**: Interactive Three.js models and animations
 - **Smooth Animations**: Framer Motion for fluid transitions
