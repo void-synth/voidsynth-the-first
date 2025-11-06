@@ -2,7 +2,6 @@
   "name": "portfolio",
   "homepage": "https://voidsynth-iota.vercel.app",
   "description": "Portfolio site for Mufutau Umar Olamilekan (VoidSynth)",
-  "repository": "https://github.com/void-synth/portfolio.git",
   "author": "Mufutau Umar Olamilekan",
   "sideEffects": false,
   "type": "module",

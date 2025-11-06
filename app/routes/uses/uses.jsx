@@ -45,10 +45,8 @@ export const Uses = () => {
                 <List>
                   <ListItem>
                     <Link href="https://www.figma.com">Figma</Link> is my primary tool for
-                    UI design these days. Made the switch from Sketch in 2020 and haven’t
-                    looked back. I’ve also created{' '}
-                    <Link href="https://www.figma.com/@hamish">a few plugins</Link> that
-                    you can install.
+                    UI design these days. Made the switch from Sketch in 2020 and haven't
+                    looked back.
                   </ListItem>
                   <ListItem>
                     Any motion graphics I create are created in Adobe After Effects. So
