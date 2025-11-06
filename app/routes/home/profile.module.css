@@ -114,6 +114,13 @@
 .image {
   position: relative;
   width: 100%;
+  opacity: 0;
+  transition: opacity var(--durationXL) ease var(--durationL);
+  transition-delay: 0.5s;
+
+  &[data-visible='true'] {
+    opacity: 1;
+  }
 }
 
 .svg {

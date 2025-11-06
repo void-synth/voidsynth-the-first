@@ -1,6 +1,6 @@
-import profileImgLarge from '~/assets/profile-large.jpg';
-import profileImgPlaceholder from '~/assets/profile-placeholder.jpg';
-import profileImg from '~/assets/profile.jpg';
+import profileImgLarge from '~/assets/umar.jpg';
+import profileImgPlaceholder from '~/assets/umar.jpg';
+import profileImg from '~/assets/umar.jpg';
 import { Button } from '~/components/button';
 import { DecoderText } from '~/components/decoder-text';
 import { Divider } from '~/components/divider';
@@ -21,16 +21,15 @@ const ProfileText = ({ visible, titleId }) => (
       <DecoderText text="Hi there" start={visible} delay={500} />
     </Heading>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      I’m Hamish, currently I live in Sydney working as a senior product designer at{' '}
-      <Link href="https://www.qwilr.com">Qwilr</Link>. My projects include UX design, UI
-      animations, and icon illustration. Being comfortable with code allows me to rapidly
-      prototype and validate experiences. If you’re interested in the tools and software I
-      use check out my <Link href="/uses">uses page</Link>.
+      I’m Mufutau (VoidSynth), based in Lagos, Nigeria — a UI/UX Designer & Fullstack
+      Developer. I design and build delightful products with a focus on motion,
+      accessibility, and performance. If you’re interested in my tools, check out my{' '}
+      <Link href="/uses">uses page</Link>.
     </Text>
     <Text className={styles.description} data-visible={visible} size="l" as="p">
-      In my spare time I like to practice Brazilian Jiu Jitsu, play video games, and{' '}
-      <Link href="/projects/volkihar-knight">make mods</Link>. I’m always down for hearing
-      about new projects, so feel free to drop me a line.
+      In my spare time I prototype interactions, explore shaders/Three.js, and tinker with
+      creative coding. I’m always open to new projects — feel free to{' '}
+      <Link href="/contact">get in touch</Link>.
     </Text>
   </Fragment>
 );
@@ -59,7 +58,7 @@ export const Profile = ({ id, visible, sectionRef }) => {
                 secondary
                 className={styles.button}
                 data-visible={visible}
-                href="/contact"
+                href="mailto:voidsynth6@gmail.com?subject=Portfolio Inquiry"
                 icon="send"
               >
                 Send me a message
@@ -77,10 +76,10 @@ export const Profile = ({ id, visible, sectionRef }) => {
                   About me
                 </div>
               </div>
-              <div className={styles.image}>
+              <div className={styles.image} data-visible={visible}>
                 <Image
                   reveal
-                  delay={100}
+                  delay={visible ? 100 : 0}
                   placeholder={profileImgPlaceholder}
                   srcSet={`${profileImg} 480w, ${profileImgLarge} 960w`}
                   width={960}

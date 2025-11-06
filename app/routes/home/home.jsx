@@ -103,8 +103,8 @@ export const Home = () => {
         sectionRef={projectOne}
         visible={visibleSections.includes(projectOne.current)}
         index={1}
-        title="Designing the future of education"
-        description="Designing a platform to help educators build better online courseware"
+        title="Developing flawless web apps"
+        description="Building scalable, user-friendly platforms that enable educators to design, manage, and deliver world-class online courseware."
         buttonText="View project"
         buttonLink="/projects/smart-sparrow"
         model={{
@@ -124,10 +124,10 @@ export const Home = () => {
         sectionRef={projectTwo}
         visible={visibleSections.includes(projectTwo.current)}
         index={2}
-        title="Video game progress tracking"
-        description="Design and development for a video game tracking app built in React Native"
+        title="Mobile development"
+        description="Design and development for mobile applications built with React Native"
         buttonText="View website"
-        buttonLink="https://gamestack.hamishw.com"
+        buttonLink="https://voidsynth-the-second.vercel.app"
         model={{
           type: 'phone',
           alt: 'App login screen',
