@@ -45,6 +45,11 @@
     max-width: 600px;
     grid-template-columns: 100%;
   }
+
+  @media (--mediaMobile) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .column {
@@ -54,6 +59,13 @@
   align-items: flex-start;
   margin-bottom: 40px;
   transform: translate3d(0, 0, 0);
+
+  @media (--mediaMobile) {
+    margin-bottom: var(--space2XL);
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .title {
@@ -64,6 +76,11 @@
 
   &[data-visible='true'] {
     opacity: 1;
+  }
+
+  @media (--mediaMobile) {
+    white-space: normal;
+    overflow-wrap: break-word;
   }
 }
 
@@ -87,6 +104,13 @@
 
   @media (--mediaTablet) {
     margin-top: 30px;
+  }
+
+  @media (--mediaMobile) {
+    margin-top: var(--space2XL);
+    margin-bottom: var(--spaceXL);
+    grid-template-columns: var(--space3XL) 1fr;
+    gap: var(--spaceS);
   }
 }
 

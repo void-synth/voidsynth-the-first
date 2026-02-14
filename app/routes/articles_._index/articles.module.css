@@ -71,6 +71,11 @@
 .heading {
   white-space: nowrap;
   overflow: hidden;
+
+  @media (--mediaMobile) {
+    white-space: normal;
+    overflow: visible;
+  }
 }
 
 .list {

@@ -16,6 +16,10 @@
 
     @media (--mediaMobile) {
       padding-left: 0;
+      padding-top: var(--mobileNavOffset);
+      padding-bottom: var(--space2XL);
+      padding-right: var(--spaceOuter);
+      padding-left: var(--spaceOuter);
     }
   }
 
@@ -150,6 +154,11 @@
       flex: 0 0 auto;
       color: var(--accent);
     }
+
+    @media (--mediaMobile) {
+      white-space: normal;
+      flex-wrap: wrap;
+    }
   }
 
   .subheading {
@@ -166,6 +175,11 @@
     white-space: nowrap;
     overflow: hidden;
     flex: 0 0 auto;
+
+    @media (--mediaMobile) {
+      white-space: normal;
+      overflow: visible;
+    }
 
     @media (--mediaMobile) {
       font-size: calc((18 / 16) * 1rem);

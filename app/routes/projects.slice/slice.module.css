@@ -10,6 +10,13 @@
 
   @media (--mediaTablet) {
     grid-template-columns: 1fr;
+    gap: var(--space3XL);
+    margin: var(--space2XL) 0;
+  }
+
+  @media (--mediaMobile) {
+    gap: var(--space2XL);
+    margin: var(--spaceXL) 0;
   }
 }
 
@@ -34,7 +41,11 @@
   }
 
   @media (--mediaMobile) {
-    padding: 0 60px;
+    padding: 0 var(--spaceOuter);
+  }
+
+  @media (--mediaMobileS) {
+    padding: 0 var(--spaceL);
   }
 }
 
@@ -64,6 +75,10 @@
   @media (--mediaTablet) {
     padding-top: 0;
   }
+
+  @media (--mediaMobile) {
+    padding-top: var(--spaceL);
+  }
 }
 
 .sidebarImages {
@@ -77,8 +92,13 @@
   }
 
   @media (--mediaMobile) {
-    padding: 0 20px;
-    margin-top: 40px;
+    padding: 0 var(--spaceOuter);
+    margin-top: var(--space2XL);
+  }
+
+  @media (--mediaMobileS) {
+    padding: 0 var(--spaceL);
+    margin-top: var(--spaceXL);
   }
 }
 

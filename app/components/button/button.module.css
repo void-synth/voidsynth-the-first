@@ -20,6 +20,12 @@
     position: relative;
     isolation: isolate;
 
+    @media (--mediaMobile) {
+      --buttonSize: calc((48 / 16) * 1rem);
+      --buttonFontSize: calc((16 / 16) * 1rem);
+      --buttonPadding: 0 var(--spaceM);
+    }
+
     &:active {
       transition-duration: calc(var(--durationXS) / 2);
     }

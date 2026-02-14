@@ -41,6 +41,12 @@
     font-weight: var(--fontWeightMedium);
     cursor: pointer;
 
+    @media (--mediaMobile) {
+      padding: 0 var(--spaceL);
+      height: 48px;
+      font-size: var(--fontSizeBodyS);
+    }
+
     &[aria-checked='true'] {
       color: var(--textBody);
     }

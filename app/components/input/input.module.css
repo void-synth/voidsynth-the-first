@@ -30,6 +30,11 @@
     overflow-x: hidden;
     outline: none;
 
+    @media (--mediaMobile) {
+      font-size: calc((16 / 16) * 1rem);
+      padding: var(--spaceM) 0 var(--spaceS);
+    }
+
     &:-internal-autofill-selected {
       -webkit-text-fill-color: var(--textBody);
       box-shadow: 0 0 0 1000px color-mix(in lab, var(--text) 10%, transparent) inset;

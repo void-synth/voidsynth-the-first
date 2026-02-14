@@ -5,12 +5,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (--mediaTablet) {
+    padding-top: var(--space4XL);
+    padding-bottom: var(--space2XL);
+    min-height: 50vh;
+  }
+
+  @media (--mediaMobile) {
+    padding-top: var(--mobileNavOffset);
+    padding-bottom: var(--space2XL);
+    padding-left: var(--spaceOuter);
+    padding-right: var(--spaceOuter);
+    min-height: auto;
+  }
 }
 
 .content {
   max-width: 600px;
   margin: 0 auto;
   text-align: center;
+  width: 100%;
+
+  @media (--mediaMobile) {
+    max-width: 100%;
+  }
 }
 
 .title {

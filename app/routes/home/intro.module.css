@@ -14,6 +14,9 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-left: var(--spaceOuter);
+  padding-right: var(--spaceOuter);
+  box-sizing: border-box;
 
   @media (--mediaDesktop) {
     max-width: 920px;
@@ -25,6 +28,8 @@
 
   @media (--mediaMobile) {
     top: calc(var(--space3XL) * -1);
+    padding-left: var(--spaceOuter);
+    padding-right: var(--spaceOuter);
   }
 
   @media (--mediaMobileS) {
@@ -90,6 +95,15 @@
 
   &[data-hidden='true'] {
     opacity: 0;
+  }
+
+  @media (--mediaMobile) {
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  @media (--mediaMobileS) {
+    gap: 8px;
   }
 }
 

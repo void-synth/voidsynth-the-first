@@ -32,5 +32,12 @@
     &:last-child {
       padding-right: 0;
     }
+
+    @media (--mediaMobile) {
+      padding-right: var(--spaceL);
+      padding-top: var(--spaceS);
+      padding-bottom: var(--spaceS);
+      font-size: var(--fontSizeBodyS);
+    }
   }
 }

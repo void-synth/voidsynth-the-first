@@ -15,4 +15,18 @@
   + & {
     margin-top: 0;
   }
+
+  @media (--mediaTablet) {
+    padding-top: var(--spaceXL);
+    padding-bottom: var(--spaceXL);
+    margin-top: var(--spaceXL);
+  }
+
+  @media (--mediaMobile) {
+    padding-top: var(--spaceL);
+    padding-bottom: var(--spaceL);
+    margin-top: var(--spaceL);
+    padding-left: var(--spaceOuter);
+    padding-right: var(--spaceOuter);
+  }
 }

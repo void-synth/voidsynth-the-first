@@ -8,6 +8,11 @@
   @media (--mediaTablet) {
     width: 100%;
   }
+
+  @media (--mediaMobile) {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 .sidebarImages {
@@ -21,8 +26,13 @@
   }
 
   @media (--mediaMobile) {
-    padding: 0 20px;
-    margin-top: 40px;
+    padding: 0 var(--spaceOuter);
+    margin-top: var(--space2XL);
+  }
+
+  @media (--mediaMobileS) {
+    padding: 0 var(--spaceL);
+    margin-top: var(--spaceXL);
   }
 }
 

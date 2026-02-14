@@ -11,6 +11,19 @@
     z-index: var(--zIndex2);
     position: relative;
     color: var(--textLight);
+
+    @media (--mediaTablet) {
+      padding: var(--space2XL) var(--spaceL);
+    }
+
+    @media (--mediaMobile) {
+      padding: var(--space2XL) var(--spaceOuter);
+      font-size: var(--fontSizeBodyS);
+    }
+
+    @media (--mediaMobileS) {
+      padding: var(--spaceXL) var(--spaceOuter);
+    }
   }
 
   .link {
